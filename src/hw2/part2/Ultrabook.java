@@ -12,4 +12,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Ultrabook extends Laptop {
     private int butteryLife;
+
+    public Ultrabook(int speed, double memory, boolean isDigital, int reliability, String accessories, int size, int butteryLife) {
+        super(speed, memory, isDigital, reliability, accessories, size);
+        this.butteryLife = butteryLife;
+    }
 }

@@ -14,4 +14,9 @@ public class Laptop extends PC {
     private String accessories;
     private int size;
 
+    public Laptop(int speed, double memory, boolean isDigital, int reliability, String accessories, int size) {
+        super(speed, memory, isDigital, reliability);
+        this.accessories = accessories;
+        this.size = size;
+    }
 }

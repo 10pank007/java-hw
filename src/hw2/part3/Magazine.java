@@ -12,5 +12,9 @@ public class Magazine extends Book {
     private boolean isPopular;
     private int countOfSubscribers;
 
-
+    public Magazine(int quality, int pages, String genres, int price, boolean isPopular, int countOfSubscribers) {
+        super(quality, pages, genres, price);
+        this.isPopular = isPopular;
+        this.countOfSubscribers = countOfSubscribers;
+    }
 }

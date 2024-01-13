@@ -14,4 +14,10 @@ public class Book extends Papyrus {
     private String genres;
     private int price;
 
+    public Book(int quality, int pages, String genres, int price) {
+        super(quality);
+        this.pages = pages;
+        this.genres = genres;
+        this.price = price;
+    }
 }

@@ -10,4 +10,9 @@ import lombok.EqualsAndHashCode;
 @AllArgsConstructor
 public class Workstation extends Laptop {
     private String software;
+
+    public Workstation(int speed, double memory, boolean isDigital, int reliability, String accessories, int size, String software) {
+        super(speed, memory, isDigital, reliability, accessories, size);
+        this.software = software;
+    }
 }

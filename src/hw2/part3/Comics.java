@@ -11,5 +11,8 @@ import lombok.EqualsAndHashCode;
 public class Comics extends Book {
     private boolean isAdult;
 
-
+    public Comics(int quality, int pages, String genres, int price, boolean isAdult) {
+        super(quality, pages, genres, price);
+        this.isAdult = isAdult;
+    }
 }
