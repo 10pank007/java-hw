@@ -1,4 +1,4 @@
-package hw2;
+package hw2.part5JSONPleaceholder;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

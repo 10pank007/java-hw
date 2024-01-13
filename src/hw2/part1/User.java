@@ -1,4 +1,4 @@
-package hw2;
+package hw2.part1;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

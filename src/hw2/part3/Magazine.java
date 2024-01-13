@@ -1,5 +1,6 @@
-package hw2;
+package hw2.part3;
 
+import hw2.part3.Book;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;

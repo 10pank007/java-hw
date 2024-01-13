@@ -1,5 +1,6 @@
-package hw2;
+package hw2.part2;
 
+import hw2.part2.Laptop;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -9,9 +10,6 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Book extends Papyrus {
-    private int pages;
-    private String genres;
-    private int price;
-
+public class Ultrabook extends Laptop {
+    private int butteryLife;
 }

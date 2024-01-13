@@ -1,5 +1,16 @@
 package hw2;
 
+import hw2.part1.Address;
+import hw2.part1.Company;
+import hw2.part1.Geo;
+import hw2.part1.User;
+import hw2.part4.Car;
+import hw2.part4.Employe;
+import hw2.part4.GENDER;
+import hw2.part4.Skills;
+import hw2.part5JSONPleaceholder.Comment;
+import hw2.part5JSONPleaceholder.Post;
+
 import java.util.ArrayList;
 
 public class Main {

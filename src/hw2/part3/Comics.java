@@ -1,16 +1,15 @@
-package hw2;
+package hw2.part3;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
 @AllArgsConstructor
-@NoArgsConstructor
-public class Laptop extends PC {
-    private String accessories;
-    private int size;
+
+public class Comics extends Book {
+    private boolean isAdult;
+
 
 }
