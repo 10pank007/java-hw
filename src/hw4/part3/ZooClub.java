@@ -17,11 +17,11 @@ public class ZooClub {
     public void addPersonToClub(Person person) {
         club.put(person, person.getAnimal());
     }
-    public void addAnimalToClub(Person person, Pet pet) {
+    public void addAnimalToPerson(Person person, Pet pet) {
         List<Pet> pets = club.get(person);
         pets.add(pet);
     }
-    public void removeAnimal(Person person, Pet pet) {
+    public void removeAnimalInPerson(Person person, Pet pet) {
         List<Pet> pets = club.get(person);
         pets.remove(pet);
     }

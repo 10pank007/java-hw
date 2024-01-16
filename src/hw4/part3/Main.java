@@ -26,8 +26,8 @@ public class Main {
         zooClub.addPersonToClub(person4);
         zooClub.addPersonToClub(person5);
 
-        zooClub.addAnimalToClub(person1, new Cat(8, "Taison", true));
-        zooClub.addAnimalToClub(person1, new Cat());
+        zooClub.addAnimalToPerson(person1, new Cat(8, "Taison", true));
+        zooClub.addAnimalToPerson(person1, new Cat());
 
 
     }
