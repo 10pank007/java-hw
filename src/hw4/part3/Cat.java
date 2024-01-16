@@ -1,9 +1,6 @@
 package hw4.part3;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @EqualsAndHashCode(callSuper = true)
 @Data
@@ -19,5 +16,11 @@ public class Cat extends Pet {
     public Cat(int age, String name, boolean isHappy) {
         super(age, name);
         this.isHappy = isHappy;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "isHappy=" + isHappy + " " + super.getAge() + " " + super.getName() + "} ";
     }
 }
