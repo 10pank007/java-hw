@@ -20,11 +20,14 @@ public class Main {
         users.add(new User(13, "yuriy"));
         users.add(new User(11, "zen"));
         users.add(new User(12, "sergiy"));
-        System.out.println(users.size());
         System.out.println(users);
         users.sort(new User.AssendingAgeComparator());
         System.out.println(users);
         users.sort(new User.DessendingAgeComparator());
+        System.out.println(users);
+        users.sort(new User.NameLengthAssendingComparator());
+        System.out.println(users);
+        users.sort(new User.NameLengthDessengingComparator());
         System.out.println(users);
         users.sort(new User.LexicographicComparator());
         System.out.println(users);

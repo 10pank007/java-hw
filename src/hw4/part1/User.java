@@ -32,4 +32,18 @@ public class User {
             return Integer.compare(o2.age, o1.age);
         }
     }
+    static class NameLengthAssendingComparator implements Comparator<User> {
+        @Override
+        public int compare(User o1, User o2) {
+
+            return o1.getName().length() - o2.getName().length();
+        }
+    }
+    static class NameLengthDessengingComparator implements Comparator<User> {
+        @Override
+        public int compare(User o1, User o2) {
+
+            return o2.getName().length() - o1.getName().length();
+        }
+    }
 }
