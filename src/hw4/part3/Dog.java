@@ -16,7 +16,7 @@ public class Dog extends Pet{
         System.out.println("Gow");
     }
 
-    public Dog(int age, int name, int size) {
+    public Dog(int age, String name, int size) {
         super(age, name);
         this.size = size;
     }

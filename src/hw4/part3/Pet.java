@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public abstract class Pet {
     private int age;
-    private int name;
+    private String name;
     abstract void sayHello();
 
 }

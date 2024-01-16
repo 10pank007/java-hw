@@ -16,7 +16,7 @@ public class Cat extends Pet {
         System.out.println("Miaw");
     }
 
-    public Cat(int age, int name, boolean isHappy) {
+    public Cat(int age, String name, boolean isHappy) {
         super(age, name);
         this.isHappy = isHappy;
     }
