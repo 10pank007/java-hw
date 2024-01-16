@@ -12,15 +12,13 @@ import java.util.*;
 public class ZooClub {
     private Map<Person, List<Pet>> club = new HashMap<>();
     public void addPersonToClub(Person person) {
-        club.put(person, person.getAnimal());
+        club.put(person, new ArrayList<>());
     }
     public void addAnimalToPerson(Person person, Pet pet) {
         club.get(person).add(pet);
-        //club.put(person, pets);
     }
     public void removeAnimalInPerson(Person person, Pet pet) {
-        List<Pet> pets = club.get(person);
-        pets.remove(pet);
+        club.get(person).remove(pet);
     }
     public void removePersonFromClub(Person person) {
         club.remove(person);

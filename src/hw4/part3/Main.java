@@ -28,7 +28,7 @@ public class Main {
 
         zooClub.addAnimalToPerson(person1, new Cat(8, "Taison", true));
         zooClub.addAnimalToPerson(person1, new Cat());
-        System.out.println(zooClub.getClub());
+        System.out.println(zooClub);
 
 
     }
