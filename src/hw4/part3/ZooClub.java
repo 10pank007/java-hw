@@ -4,22 +4,19 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
 public class ZooClub {
-    private Map<Person, List<Pet>> club;
+    private Map<Person, List<Pet>> club = new HashMap<>();
     public void addPersonToClub(Person person) {
         club.put(person, person.getAnimal());
     }
     public void addAnimalToPerson(Person person, Pet pet) {
-        List<Pet> pets = club.get(person);
-        pets.add(pet);
+        club.get(person).add(pet);
+        //club.put(person, pets);
     }
     public void removeAnimalInPerson(Person person, Pet pet) {
         List<Pet> pets = club.get(person);
